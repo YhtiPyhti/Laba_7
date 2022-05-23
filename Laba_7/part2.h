@@ -13,4 +13,6 @@ ostream& operator<< (ostream& os, const map<T,T1>& v) {
     }
     return os;
 }
+
+
 void part2();

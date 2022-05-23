@@ -17,6 +17,5 @@ void part2() {
 	
 	cout << endl;
 	map<int, bool> m2 = { {13, true}, {21, false}, {67, true}, {25, false}, {7, true} };
-	upper_bound(m2.begin(), m2.end(), [](pair<int, bool> r) {return r.second; });
-	cout << "exp_6: ";
+	cout << "exp_6: " << count_if(m2.begin(), m2.end(), [](pair<int, bool> r) {return r.second; }) << endl;
 }
